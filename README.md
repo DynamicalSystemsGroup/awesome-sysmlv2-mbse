@@ -37,6 +37,21 @@ Each resource links to notes covering **purpose, interfaces, license, specificat
 
 > **Evidence:** Descriptions summarize upstream documentation. Tools were not installed or runtime-tested for this catalog. Compatibility and maintenance uncertainties are explicit; inclusion does not establish conformance certification.
 
+## Ecosystem map
+
+See how authoring, language engines, model repositories, analysis, validation and AI tooling fit together, with a documented Flexo stack example.
+
+[Interactive map](docs/diagrams/ecosystem.html) · [SVG](docs/diagrams/ecosystem.svg) · [Scope, evidence and editable source](docs/diagrams/README.md)
+
+<details>
+<summary>Expand the ecosystem diagram</summary>
+
+![SysML v2 and MBSE ecosystem roles and a documented Flexo integration example](docs/diagrams/ecosystem.svg)
+
+</details>
+
+Dashed arrows show conceptual role relationships; solid arrows show selected upstream-documented connections. The map is a collection of roles and examples, not a single interoperable stack. Download the HTML and open it in a browser for the interactive view; GitHub displays its source.
+
 ## Open-source tools and resources
 
 The task tables below list resources with documented open-source licenses. Multiple open-source licenses, such as Apache-2.0 and LGPL-3.0, remain open source; check component terms in the resource notes. Integrations requiring proprietary hosts and resources awaiting license review have separate sections.

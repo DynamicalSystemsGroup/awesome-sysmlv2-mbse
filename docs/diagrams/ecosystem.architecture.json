@@ -1,0 +1,602 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "SysML v2 and MBSE ecosystem",
+    "output": "docs/diagrams/ecosystem.html",
+    "quality_profile": "showcase",
+    "locale": "en",
+    "repository": {
+      "url": "git@github.com-dsg:DynamicalSystemsGroup/awesome-sysmlv2-mbse.git",
+      "revision": "af53ca244f2ecec1a438b4c706f31ce098f37fcf",
+      "link_mode": "local-only"
+    }
+  },
+  "components": [
+    {
+      "id": "skills",
+      "type": "external",
+      "label": "AI skills and agents",
+      "sublabel": "DSG MBSE / OpenSysML skills",
+      "pos": [
+        30,
+        50
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 406,
+          "end_line": 417
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 418,
+          "end_line": 429
+        }
+      ],
+      "tag": "Instructions + tool access"
+    },
+    {
+      "id": "libraries",
+      "type": "external",
+      "label": "Libraries and packages",
+      "sublabel": "SYSMOD / use cases / Sysand",
+      "pos": [
+        450,
+        50
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 218,
+          "end_line": 228
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 62,
+          "end_line": 72
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 51,
+          "end_line": 61
+        }
+      ]
+    },
+    {
+      "id": "standards",
+      "type": "external",
+      "label": "Standards and contracts",
+      "sublabel": "SysML 2.0 / KerML / Modeling API",
+      "pos": [
+        870,
+        50
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "README.md",
+          "line": 152,
+          "end_line": 157
+        }
+      ]
+    },
+    {
+      "id": "author",
+      "type": "frontend",
+      "label": "Authoring interfaces",
+      "sublabel": "VS Code / SysON / notebooks",
+      "pos": [
+        30,
+        260
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 140,
+          "end_line": 150
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 40,
+          "end_line": 50
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 295,
+          "end_line": 305
+        }
+      ]
+    },
+    {
+      "id": "models",
+      "type": "database",
+      "label": "Models and interchange",
+      "sublabel": "Text / JSON / KPAR",
+      "pos": [
+        450,
+        260
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 7,
+          "end_line": 17
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 151,
+          "end_line": 161
+        }
+      ],
+      "tag": "Preservation needs checking"
+    },
+    {
+      "id": "engines",
+      "type": "backend",
+      "label": "Language engines and SDKs",
+      "sublabel": "OpenSysML / Toolkit / Java pilot",
+      "pos": [
+        870,
+        260
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 18,
+          "end_line": 28
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 7,
+          "end_line": 17
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 29,
+          "end_line": 39
+        }
+      ]
+    },
+    {
+      "id": "portals",
+      "type": "frontend",
+      "label": "Portals and collaboration",
+      "sublabel": "Web modeler / API clients",
+      "pos": [
+        30,
+        470
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 162,
+          "end_line": 172
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 173,
+          "end_line": 183
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "type": "database",
+      "label": "Model repositories and APIs",
+      "sublabel": "Flexo / API Services pilot",
+      "pos": [
+        450,
+        470
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 95,
+          "end_line": 105
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 84,
+          "end_line": 94
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 184,
+          "end_line": 194
+        }
+      ]
+    },
+    {
+      "id": "analysis",
+      "type": "backend",
+      "label": "Analysis and validation",
+      "sublabel": "Values / rules / constraints",
+      "pos": [
+        870,
+        470
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 295,
+          "end_line": 305
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 328,
+          "end_line": 338
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 18,
+          "end_line": 28
+        }
+      ]
+    },
+    {
+      "id": "legacy",
+      "type": "frontend",
+      "label": "Legacy MBSE workflows",
+      "sublabel": "View Editor / Cameo MDK",
+      "pos": [
+        30,
+        680
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 117,
+          "end_line": 128
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 350,
+          "end_line": 361
+        }
+      ],
+      "tag": "Backend / host dependent"
+    },
+    {
+      "id": "evidence",
+      "type": "security",
+      "label": "Tests, CI and provenance",
+      "sublabel": "Testing ledger / contract suites",
+      "pos": [
+        450,
+        680
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 384,
+          "end_line": 394
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 395,
+          "end_line": 405
+        }
+      ],
+      "tag": "Retained results + review"
+    },
+    {
+      "id": "adjacent",
+      "type": "external",
+      "label": "Engineering integrations",
+      "sublabel": "FMPy / StrictDoc / Lyo / CAD",
+      "pos": [
+        870,
+        680
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 339,
+          "end_line": 349
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 362,
+          "end_line": 372
+        },
+        {
+          "path": "docs/resources.md",
+          "line": 373,
+          "end_line": 383
+        }
+      ],
+      "tag": "Connectors are tool-specific"
+    },
+    {
+      "id": "pyclient",
+      "type": "frontend",
+      "label": "Python API client",
+      "sublabel": "SysML repository operations",
+      "pos": [
+        30,
+        950
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 173,
+          "end_line": 183
+        }
+      ],
+      "tag": "Documented Flexo example"
+    },
+    {
+      "id": "adapter",
+      "type": "backend",
+      "label": "Flexo SysML v2 adapter",
+      "sublabel": "Systems Modeling REST/HTTP API",
+      "pos": [
+        450,
+        950
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 84,
+          "end_line": 94
+        }
+      ]
+    },
+    {
+      "id": "layer1",
+      "type": "database",
+      "label": "Flexo MMS Layer 1",
+      "sublabel": "Version-controlled RDF models",
+      "pos": [
+        870,
+        950
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 95,
+          "end_line": 105
+        }
+      ]
+    },
+    {
+      "id": "deploy",
+      "type": "cloud",
+      "label": "Flexo deployment resources",
+      "sublabel": "Compose / Kubernetes examples",
+      "pos": [
+        450,
+        1160
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 106,
+          "end_line": 116
+        }
+      ]
+    },
+    {
+      "id": "mcp",
+      "type": "backend",
+      "label": "Flexo Layer 1 MCP",
+      "sublabel": "Read-only default / optional writes",
+      "pos": [
+        870,
+        1160
+      ],
+      "size": [
+        300,
+        76
+      ],
+      "sources": [
+        {
+          "path": "docs/resources.md",
+          "line": 430,
+          "end_line": 440
+        }
+      ],
+      "tag": "Backend permissions apply"
+    }
+  ],
+  "connections": [
+    {
+      "id": "skill-guidance",
+      "from": "skills",
+      "to": "author",
+      "label": "guide",
+      "variant": "dashed"
+    },
+    {
+      "id": "reuse",
+      "from": "libraries",
+      "to": "models",
+      "label": "reuse",
+      "variant": "dashed"
+    },
+    {
+      "id": "normative",
+      "from": "standards",
+      "to": "engines",
+      "label": "define rules",
+      "variant": "dashed"
+    },
+    {
+      "id": "author-models",
+      "from": "author",
+      "to": "models",
+      "label": "author",
+      "variant": "dashed"
+    },
+    {
+      "id": "engine-inputs",
+      "from": "models",
+      "to": "engines",
+      "label": "process",
+      "variant": "dashed"
+    },
+    {
+      "id": "revision-models",
+      "from": "models",
+      "to": "services",
+      "label": "persist",
+      "variant": "dashed"
+    },
+    {
+      "id": "portal-access",
+      "from": "portals",
+      "to": "services",
+      "label": "selected backend",
+      "variant": "dashed"
+    },
+    {
+      "id": "engine-analysis",
+      "from": "engines",
+      "to": "analysis",
+      "label": "evaluate",
+      "variant": "dashed"
+    },
+    {
+      "id": "legacy-context",
+      "from": "legacy",
+      "to": "portals",
+      "label": "workflow precedent",
+      "variant": "dashed"
+    },
+    {
+      "id": "evidence-context",
+      "from": "services",
+      "to": "evidence",
+      "label": "revision context",
+      "variant": "dashed"
+    },
+    {
+      "id": "analysis-adapters",
+      "from": "analysis",
+      "to": "adjacent",
+      "label": "adapter required",
+      "variant": "dashed"
+    },
+    {
+      "id": "client-adapter",
+      "from": "pyclient",
+      "to": "adapter",
+      "label": "REST/HTTP",
+      "variant": "emphasis"
+    },
+    {
+      "id": "adapter-layer1",
+      "from": "adapter",
+      "to": "layer1",
+      "label": "RDF backend",
+      "variant": "emphasis"
+    },
+    {
+      "id": "deploy-stack",
+      "from": "deploy",
+      "to": "adapter",
+      "label": "configure stack",
+      "variant": "dashed"
+    },
+    {
+      "id": "mcp-layer1",
+      "from": "mcp",
+      "to": "layer1",
+      "label": "Layer 1 API",
+      "variant": "emphasis"
+    }
+  ],
+  "cards": [
+    {
+      "dot": "slate",
+      "title": "Read the map",
+      "items": [
+        "Upper rows group roles and examples; they are not one deployable stack.",
+        "Dashed arrows show role relationships, not verified tool-pair compatibility.",
+        "Solid arrows in the Flexo example are documented connections, not local test results."
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "Access and interoperability",
+      "items": [
+        "Code licensing and proprietary host access are separate.",
+        "View Editor is a legacy workflow; native v2 or direct Flexo support is unverified.",
+        "Diagram exchange, semantic merge and model preservation need tool-pair evidence."
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "Evidence before approval",
+      "items": [
+        "Language checks, engineering checks and tool conformance are distinct.",
+        "Agent instructions and generated models do not establish engineering approval.",
+        "Catalog snapshot: 11 October 2026. Resource notes retain upstream sources."
+      ]
+    }
+  ]
+}
