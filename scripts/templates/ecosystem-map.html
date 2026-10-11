@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SysML v2 &amp; MBSE — ecosystem atlas</title>
+<style>
+:root{color-scheme:light;--paper:#fbfcfa;--ink:#26332f;--muted:#607069;--rule:#dde4df;--accent:#285f49}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 system-ui,-apple-system,sans-serif}
+button,input,select{font:inherit}button,a,input,select{-webkit-tap-highlight-color:transparent}button{cursor:pointer}a{color:var(--accent);text-underline-offset:3px}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #285f49;outline-offset:4px}
+.page{max-width:1480px;margin:auto;padding:36px 44px 24px}.masthead{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:32px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}.masthead a{text-transform:none;letter-spacing:0;font-size:14px}
+.intro{display:flex;gap:40px;justify-content:space-between;align-items:flex-end;margin-bottom:24px}h1{font-size:clamp(32px,4vw,52px);line-height:1.08;letter-spacing:-.04em;font-weight:700;margin:0 0 14px}.intro p{max-width:650px;color:var(--muted);margin:0;font-size:16px}.edition{white-space:nowrap;font-size:13px;color:var(--muted);padding-bottom:4px}
+.toolbar{display:grid;grid-template-columns:minmax(180px,1fr) 230px auto auto;gap:12px;align-items:end;margin-bottom:22px}.control label{display:block;font-size:12px;font-weight:600;margin-bottom:5px}.control input,.control select{width:100%;height:42px;padding:8px 12px;border:1px solid var(--rule);border-radius:6px;background:white;color:var(--ink)}.action{height:42px;padding:8px 16px;border:1px solid var(--rule);border-radius:6px;background:white;color:var(--ink)}.action:hover{border-color:var(--accent);background:#f0f5f1}
+.workspace{display:grid;grid-template-columns:minmax(0,1fr) 292px;gap:32px;align-items:start}.map-column{min-width:0}.map-topline{display:flex;justify-content:space-between;align-items:center;min-height:32px;gap:16px;margin-bottom:6px}.breadcrumbs{font-size:14px}.breadcrumbs button{border:0;padding:0;background:transparent;color:var(--accent);text-decoration:underline;text-underline-offset:3px}.breadcrumbs span{color:var(--muted)}#results-status{font-size:12px;color:var(--muted);text-align:right}
+#ecosystem-map{display:block;width:100%;height:auto;overflow:hidden}.category{cursor:zoom-in}.category.outside-zoom{visibility:hidden}.category:focus-visible,.resource:focus-visible{outline:none}.resource{cursor:pointer}.category:focus-visible .category-ring{stroke:var(--accent);stroke-width:4}.resource:focus-visible .tool-circle,.resource.selected .tool-circle{stroke:var(--accent);stroke-width:4;fill:#fff}.resource:hover .tool-circle{stroke:#405e4f;stroke-width:3;fill:#fff}.resource.is-dimmed{opacity:.13;pointer-events:none}.resource.matched .tool-circle{stroke:var(--accent);stroke-width:3}.map-caption{font-size:12px;color:var(--muted);margin:8px 0 20px;max-width:760px}
+.side{padding-top:38px}.side h2{font-size:19px;line-height:1.3;margin:0 0 12px;letter-spacing:-.02em}.side p{color:var(--muted);margin:0 0 16px;font-size:14px}.side-kicker{font-size:11px;font-weight:650;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}.category-nav{display:flex;align-items:center;width:100%;gap:10px;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--rule);padding:12px 0;font-size:13px}.category-nav:hover{color:var(--accent)}.category-nav.active{font-weight:700}.swatch{height:12px;width:12px;border:1px solid #26332f22;border-radius:50%;flex-shrink:0}.nav-count{margin-left:auto;color:var(--muted);font-weight:400}
+.details{border-top:1px solid var(--rule);padding-top:22px;margin-top:26px}.details dl{margin:16px 0}.details dt{font-size:11px;letter-spacing:.07em;text-transform:uppercase;font-weight:700;margin-top:14px}.details dd{font-size:13px;color:var(--muted);margin:4px 0 0;overflow-wrap:anywhere}.detail-links{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;margin-top:20px}.status-tag{display:inline-block;font-size:11px;border:1px solid var(--rule);padding:3px 8px;border-radius:4px;background:white;margin:4px 0 12px}.legend{display:flex;gap:8px 20px;flex-wrap:wrap;padding:18px 0;border-top:1px solid var(--rule);font-size:12px;color:var(--muted)}.legend strong{color:var(--ink)}.legend-mark{display:inline-block;width:12px;height:12px;border:1px solid #7b5760;border-radius:50%;margin-right:6px;vertical-align:-2px;background:white}.legend-mark.review{border-color:#8b7352;border-style:dashed}
+details.directory{border-top:1px solid var(--rule);padding:16px 0;margin-top:8px}summary{cursor:pointer;font-size:14px;font-weight:600}.directory ul{columns:3;column-gap:30px;padding-left:18px;font-size:13px}.directory li{break-inside:avoid;margin:8px 0}.directory li[hidden]{display:none}.colophon{display:flex;gap:24px;justify-content:space-between;padding-top:20px;border-top:1px solid var(--rule);font-size:12px;color:var(--muted);margin-top:20px}.colophon p{margin:0;max-width:680px}#tooltip{position:fixed;z-index:10;pointer-events:none;padding:9px 12px;background:#26332f;color:white;border-radius:6px;font-size:12px;max-width:280px}#tooltip[hidden]{display:none}.empty-message{margin:12px 0;color:var(--muted);font-size:14px}.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:1000px){.page{padding:28px 24px}.workspace{grid-template-columns:minmax(0,1fr) 240px;gap:20px}.toolbar{grid-template-columns:1fr 210px auto}.toolbar #export{grid-column:3}.toolbar #reset{grid-column:3;grid-row:1}.toolbar #export{display:none}.edition{display:none}}
+@media(max-width:720px){.page{padding:20px 16px}.masthead{margin-bottom:24px}.intro{margin-bottom:20px}.intro p{font-size:14px}.toolbar{grid-template-columns:1fr auto;gap:10px}.control.access-control{grid-column:1;grid-row:2}.toolbar #reset{grid-column:2;grid-row:2}.workspace{grid-template-columns:1fr;gap:8px}.side{padding-top:8px}.category-navigation{display:grid;grid-template-columns:1fr 1fr;gap:0 18px}.side .details{margin-top:20px}.directory ul{columns:1}.colophon{display:block}.colophon p+p{margin-top:12px}.map-topline{align-items:flex-start}.legend{gap:10px}}
+@media print{.toolbar,.side,.masthead a,.directory,#tooltip{display:none}.workspace{display:block}.page{padding:0}.intro{margin-bottom:8px}#ecosystem-map{max-height:220mm}.colophon{font-size:10px}.map-caption{font-size:10px}}
+</style>
+</head>
+<body>
+<main class="page">
+<header class="masthead"><span>SysML v2 / MBSE</span><a href="../../README.md">Back to the catalog</a></header>
+<section class="intro" aria-label="Introduction"><div><h1>An ecosystem of tools.</h1><p>Explore the resources for building, analyzing and validating systems models. Click a category to zoom in, then select a resource to learn more.</p></div><div class="edition">__COUNT__ resources · 8 areas · October 2026</div></section>
+<div class="toolbar" aria-label="Explore the map">
+<div class="control"><label for="search">Find a resource or capability</label><input id="search" type="search" placeholder="Try Flexo, diagrams, Python or requirements" autocomplete="off"></div>
+<div class="control access-control"><label for="access">License and access</label><select id="access"><option value="all">All resources</option><option value="open">Documented open source</option><option value="host">Proprietary host required</option><option value="review">License review needed</option><option value="artifacts">Artifact-specific terms</option></select></div>
+<button class="action" id="reset" type="button">Reset view</button><button class="action" id="export" type="button">Download SVG</button>
+</div>
+<div class="workspace">
+<section class="map-column" aria-label="Ecosystem visualization">
+<div class="map-topline"><nav class="breadcrumbs" aria-label="Map location"><button id="home" type="button">Ecosystem</button><span id="breadcrumb"></span></nav><span id="results-status" role="status" aria-live="polite">__COUNT__ resources</span></div>
+__SVG__
+<p class="empty-message" id="empty" hidden>No matching resources. Try a broader search or change the access filter.</p>
+<p class="map-caption">One primary home per resource; secondary capabilities remain searchable. Circle size and position do not indicate popularity, maturity or compatibility. Use the resource list below for an accessible text view.</p>
+</section>
+<aside class="side" aria-label="Categories and resource details">
+<div class="side-kicker">Explore by role</div><h2>The ecosystem</h2><p>Engines sit at the center. Editors, libraries, repositories and engineering workflows form the surrounding landscape.</p>
+<nav class="category-navigation" aria-label="Resource categories">__NAV__</nav>
+<section class="details" id="details" aria-live="polite"><div class="side-kicker">Resource notes</div><h2>Select a resource</h2><p>Hover to see its full name. Select it to inspect its purpose, access terms and documented limits.</p><p>Tools often span several areas. The placement is a browsing choice, not an integration claim.</p></section>
+</aside>
+</div>
+<div class="legend"><strong>Access notes</strong><span><span class="legend-mark"></span>Proprietary host required</span><span><span class="legend-mark review"></span>License review needed</span><span>Exact terms are in each resource note.</span></div>
+<details class="directory"><summary>Browse all __COUNT__ resources as a list</summary><ul id="resource-list">__LIST__</ul></details>
+<footer class="colophon"><p>Descriptions are based on documentation review, not runtime testing or conformance certification. AI-generated artifacts still need engineering review.</p><p><a href="ecosystem.html">Connection view</a> · <a href="../coverage.md">Coverage and open questions</a></p></footer>
+<noscript><p>JavaScript is disabled. The full diagram and resource links above remain available; zoom, search and selection need JavaScript.</p></noscript>
+</main>
+<div id="tooltip" role="tooltip" hidden></div>
+<script type="application/json" id="ecosystem-data">__DATA__</script>
+<script>
+'use strict';
+const data=JSON.parse(document.getElementById('ecosystem-data').textContent);
+const resources=new Map(data.resources.map(r=>[r.id,r]));
+const groups=new Map(data.groups.map(g=>[g.id,g]));
+const svg=document.getElementById('ecosystem-map');
+const search=document.getElementById('search'),access=document.getElementById('access');
+const details=document.getElementById('details'),tip=document.getElementById('tooltip');
+const accessLabels={open:'Documented open source',host:'Proprietary host required',review:'License review needed',artifacts:'Artifact-specific terms'};
+let currentGroup=null,selected=null;
+function el(tag,text,className){const n=document.createElement(tag);if(text)n.textContent=text;if(className)n.className=className;return n;}
+function matching(r){const query=search.value.trim().toLowerCase();return (access.value==='all'||r.access===access.value)&&(!query||[r.name,r.purpose,r.tasks,r.interfaces,r.license].join(' ').toLowerCase().includes(query));}
+function applyFilters(){
+ let count=0;const query=search.value.trim();
+ for(const r of data.resources){const match=matching(r);if(match)count++;
+  const node=svg.querySelector(`[data-resource="${r.id}"]`);node.classList.toggle('is-dimmed',!match);node.classList.toggle('matched',!!query&&match);node.setAttribute('tabindex',match?'0':'-1');
+  document.querySelector(`[data-list-resource="${r.id}"]`).hidden=!match;
+ }
+ document.getElementById('results-status').textContent=count===data.resources.length?`${count} resources`:`${count} of ${data.resources.length} match`;
+ document.getElementById('empty').hidden=count!==0;
+ for(const g of data.groups){const button=document.querySelector(`[data-group="${g.id}"]`);button.querySelector('.nav-count').textContent=data.resources.filter(r=>r.group===g.id&&matching(r)).length;}
+ if(selected&&!matching(resources.get(selected)))clearSelection();
+}
+function zoom(gid){
+ currentGroup=gid;const g=groups.get(gid);
+ svg.setAttribute('viewBox',g?`${g.x-210} ${g.y-210} 420 420`:'0 0 1320 1320');
+ document.getElementById('breadcrumb').textContent=g?' / '+g.name:'';
+ document.querySelectorAll('[data-group]').forEach(b=>b.classList.toggle('active',b.dataset.group===gid));
+ tip.hidden=true;
+ // Keep the selected category readable without cropped neighboring labels.
+ svg.querySelectorAll('.category').forEach(n=>{n.classList.toggle('outside-zoom',Boolean(gid&&n.dataset.category!==gid));n.setAttribute('tabindex',!gid||n.dataset.category===gid?'0':'-1');});
+ svg.querySelectorAll('.resource').forEach(n=>n.setAttribute('tabindex',(!gid||resources.get(n.dataset.resource).group===gid)&&matching(resources.get(n.dataset.resource))?'0':'-1'));
+}
+function clearSelection(){selected=null;svg.querySelectorAll('.resource').forEach(n=>n.classList.remove('selected'));details.replaceChildren(el('div','Resource notes','side-kicker'),el('h2','Select a resource'),el('p','Choose a tool in the map or the resource list to inspect its purpose, access terms and sources.'));}
+function selectResource(id){
+ const r=resources.get(id);if(!r)return;selected=id;zoom(r.group);
+ svg.querySelectorAll('.resource').forEach(n=>n.classList.toggle('selected',n.dataset.resource===id));
+ const dl=el('dl');for(const [label,value] of [['Primary area',groups.get(r.group).name],['Roles and capabilities',r.tasks],['Interfaces',r.interfaces],['License',r.license],['Limits',r.limits]])dl.append(el('dt',label),el('dd',value));
+ const links=el('div',null,'detail-links');const notes=el('a','Full resource notes');notes.href=r.notes;links.append(notes);
+ if(r.upstream){const upstream=el('a','Upstream project');upstream.href=r.upstream;upstream.target='_blank';upstream.rel='noopener noreferrer';links.append(upstream);}
+ details.replaceChildren(el('div','Selected resource','side-kicker'),el('h2',r.name),el('span',accessLabels[r.access],'status-tag'),el('p',r.purpose),dl,links);
+ if(matchMedia('(max-width:720px)').matches)details.scrollIntoView({block:'start',behavior:'instant'});
+}
+svg.addEventListener('click',event=>{const tool=event.target.closest('[data-resource]');if(tool){if(matching(resources.get(tool.dataset.resource)))selectResource(tool.dataset.resource);return;}const category=event.target.closest('[data-category]');zoom(category?category.dataset.category:null);});
+svg.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){const node=event.target.closest('[data-resource],[data-category]');if(node){event.preventDefault();node.dispatchEvent(new MouseEvent('click',{bubbles:true}));}}});
+document.querySelectorAll('[data-group]').forEach(button=>button.addEventListener('click',()=>{clearSelection();zoom(button.dataset.group);}));
+document.querySelectorAll('[data-resource-link]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();selectResource(link.dataset.resourceLink);}));
+search.addEventListener('input',()=>{applyFilters();zoom(currentGroup);});access.addEventListener('change',()=>{applyFilters();zoom(currentGroup);});
+function reset(){search.value='';access.value='all';clearSelection();applyFilters();zoom(null);}
+document.getElementById('reset').addEventListener('click',reset);document.getElementById('home').addEventListener('click',()=>{clearSelection();zoom(null);});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'){clearSelection();zoom(null);tip.hidden=true;}});
+svg.addEventListener('pointermove',event=>{const tool=event.target.closest('[data-resource]');if(!tool||!matching(resources.get(tool.dataset.resource))){tip.hidden=true;return;}const r=resources.get(tool.dataset.resource);tip.textContent=r.name+' · '+accessLabels[r.access];tip.hidden=false;const rect=tip.getBoundingClientRect();tip.style.left=Math.min(event.clientX+16,innerWidth-rect.width-12)+'px';tip.style.top=Math.min(event.clientY+16,innerHeight-rect.height-12)+'px';});
+svg.addEventListener('pointerleave',()=>{tip.hidden=true;});
+document.getElementById('export').addEventListener('click',()=>{
+ const clone=svg.cloneNode(true);clone.setAttribute('viewBox','0 0 1320 1320');
+ clone.querySelectorAll('[tabindex]').forEach(n=>{n.removeAttribute('tabindex');n.removeAttribute('role');});
+ clone.querySelectorAll('.category').forEach(n=>n.classList.remove('outside-zoom'));
+ clone.querySelectorAll('.resource').forEach(n=>n.classList.remove('selected','matched','is-dimmed'));
+ const text='<?xml version="1.0" encoding="UTF-8"?>\n'+new XMLSerializer().serializeToString(clone);
+ const url=URL.createObjectURL(new Blob([text],{type:'image/svg+xml'}));const link=el('a');link.href=url;link.download='sysmlv2-mbse-ecosystem.svg';link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+</script>
+</body>
+</html>

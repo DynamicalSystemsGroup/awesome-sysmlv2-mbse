@@ -16,7 +16,7 @@ Do not rank by stars or repeat marketing claims as verified findings. Apply the 
 
 1. Check existing entries to avoid duplicate records.
 2. Use [the resource template](docs/resource-template.md) for a canonical record in `docs/resources.md`; longer evaluations may live in separate Markdown notes.
-3. Add or update the appropriate README category links. A tool can serve several tasks while having one canonical record.
+3. Add or update the appropriate README category links. A tool can serve several tasks while having one canonical record. Update the bubble map's primary placement and access classification, then regenerate it following [the diagram maintenance notes](docs/diagrams/README.md#sources-and-maintenance).
 4. Cite sources for capabilities, license, supported versions, limitations, and lifecycle status. Write `unknown` or `not assessed` when evidence is missing.
 5. Record the date and scope of the review. Preserve any older test evidence and its exact version; a documentation update does not refresh a test result.
 6. Review the rendered Markdown, local links/anchors, and changed external links before proposing the change.

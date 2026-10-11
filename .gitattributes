@@ -1,3 +1,5 @@
 # Preserve checked generator output verbatim and collapse it in code reviews.
 docs/diagrams/ecosystem.html linguist-generated=true whitespace=-blank-at-eol
 docs/diagrams/ecosystem.svg linguist-generated=true whitespace=-blank-at-eol
+docs/diagrams/ecosystem-bubbles.html linguist-generated=true
+docs/diagrams/ecosystem-bubbles.svg linguist-generated=true

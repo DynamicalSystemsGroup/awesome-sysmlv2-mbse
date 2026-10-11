@@ -39,18 +39,15 @@ Each resource links to notes covering **purpose, interfaces, license, specificat
 
 ## Ecosystem map
 
-See how authoring, language engines, model repositories, analysis, validation and AI tooling fit together, with a documented Flexo stack example.
+Explore **39 resources across eight category bubbles**, from authoring and engines to repositories, analysis, evidence and AI skills. Each resource has one primary placement; search also covers its secondary capabilities.
 
-[Interactive map](docs/diagrams/ecosystem.html) · [SVG](docs/diagrams/ecosystem.svg) · [Scope, evidence and editable source](docs/diagrams/README.md)
+[Interactive bubble map](docs/diagrams/ecosystem-bubbles.html) · [Full-size SVG](docs/diagrams/ecosystem-bubbles.svg) · [Connection view](docs/diagrams/ecosystem.html) · [Scope and editable sources](docs/diagrams/README.md)
 
-<details>
-<summary>Expand the ecosystem diagram</summary>
+![SysML v2 and MBSE ecosystem: 39 resources grouped into eight pastel category bubbles](docs/diagrams/ecosystem-bubbles.svg)
 
-![SysML v2 and MBSE ecosystem roles and a documented Flexo integration example](docs/diagrams/ecosystem.svg)
+Select a category to zoom in, or a resource to inspect its purpose, license, interfaces and source links. The interactive view includes search and access filters. Circle sizes are decorative, not rankings or adoption measures; category membership does not establish interoperability.
 
-</details>
-
-Dashed arrows show conceptual role relationships; solid arrows show selected upstream-documented connections. The map is a collection of roles and examples, not a single interoperable stack. Download the HTML and open it in a browser for the interactive view; GitHub displays its source.
+Download the HTML and open it in a browser for the interactive view; GitHub displays its source. The separate connection view distinguishes conceptual role relationships from selected upstream-documented Flexo connections.
 
 ## Open-source tools and resources
 
