@@ -1,0 +1,124 @@
+<div align="center">
+
+<h1>Awesome SysML v2 &amp; MBSE</h1>
+
+<p>A technical resource catalog for developers and systems engineers.<br>Build models. Explore systems. Validate with evidence.</p>
+
+<p>
+  <a href="https://www.omg.org/spec/SysML/2.0/"><img src="https://img.shields.io/badge/SysML-v2-2563eb?style=flat-square" alt="SysML v2"></a>
+  <a href="#browse-by-task"><img src="https://img.shields.io/badge/MBSE-tooling-0f766e?style=flat-square" alt="MBSE tooling"></a>
+  <a href="CONTRIBUTING.md#evidence-levels"><img src="https://img.shields.io/badge/evidence-documentation_reviewed-475569?style=flat-square" alt="Evidence: documentation reviewed"></a>
+  <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-7c3aed?style=flat-square" alt="Contributions welcome"></a>
+</p>
+
+<p><a href="docs/resources.md">Resource notes</a> &middot; <a href="docs/coverage.md">Coverage &amp; open questions</a> &middot; <a href="CONTRIBUTING.md">Contribute</a></p>
+
+</div>
+
+Find tools and utilities for **building, analyzing, and validating models** with SysML v2 and related MBSE workflows. Open-source tooling is the initial focus; commercial and mixed-license resources may be included with clear access terms.
+
+**33 resource records** &nbsp; · &nbsp; **Primary documentation reviewed: 11 October 2026**
+
+## Browse by task
+
+| Start here | Find resources for |
+| --- | --- |
+| [Build models](#build-models) | Editors, language servers, libraries, packages, migration and diagrams |
+| [Analyze models](#analyze-models) | Queries, calculations, constraints, traceability, simulation and reports |
+| [Validate models](#validate-models) | Language checks, engineering rules, automation and implementation tests |
+| [Supporting infrastructure](#supporting-infrastructure) | Engines, SDKs, repositories, APIs, collaboration and deployment |
+
+[Standards and reference material](#standards-and-reference-material) · [Coverage and open questions](docs/coverage.md) · [Maintain this catalog](#maintain-this-catalog)
+
+### Reading the entries
+
+Each resource links to notes covering **purpose, interfaces, license, specification target, getting started, limitations and sources**. Entries distinguish native SysML tools from libraries, example models, deployment recipes and adjacent integration components.
+
+> **Evidence:** Descriptions summarize upstream documentation. Tools were not installed or runtime-tested for this catalog. Compatibility and maintenance uncertainties are explicit; inclusion does not establish conformance certification.
+
+## Build models
+
+| Category | Resources | Use |
+| --- | --- | --- |
+| Textual editors and language servers | [SysML Toolkit](docs/resources.md#sysml-toolkit), [OpenSysML](docs/resources.md#opensysml), [Java pilot](docs/resources.md#sysml-v2-java-pilot), [SysML v2 LSP](docs/resources.md#sysml-v2-language-server), [VS Code extension](docs/resources.md#sysml-v2-vs-code-extension) | Author models with navigation, completion and diagnostics |
+| Graphical and structured editors | [Eclipse SysON](docs/resources.md#eclipse-syson), [OpenMBEE web modeler](docs/resources.md#openmbee-web-modeler), [React Flow components](docs/resources.md#sysml-react-flow-components) | Model in a browser or build a diagram interface |
+| Notebook modeling | [SysMD](docs/resources.md#sysmd-notebook), [Java pilot](docs/resources.md#sysml-v2-java-pilot) | Combine model cells, calculations and documentation |
+| Reusable libraries and methods | [Structured Use Cases](docs/resources.md#structured-use-cases), [SYSMOD](docs/resources.md#sysmod-library), [official libraries](docs/resources.md#official-libraries-and-examples) | Reuse scenarios, requirements patterns and architecture concepts |
+| Reference models | [Apollo 11](docs/resources.md#airbus-apollo-11-reference-model), [GfSE collection](docs/resources.md#gfse-sysml-v2-model-collection), [official examples](docs/resources.md#official-libraries-and-examples) | Learn from models and select realistic evaluation inputs |
+| Packages and dependencies | [Sysand](docs/resources.md#sysand) | Manage model libraries and dependencies |
+| Conversion and interchange | [SysML Toolkit](docs/resources.md#sysml-toolkit), [SysML2.NET](docs/resources.md#sysml2net) | Work with model representations and project archives |
+| Migration | [OpenSysML migration](docs/resources.md#opensysml-v1-migration), [OMG transformation specification](https://www.omg.org/spec/SysML/2.0/) | Investigate legacy-to-v2 mappings and migration losses |
+| Editable layout and presentation | [OpenSysML layout metadata](docs/resources.md#opensysml-diagram-layout-metadata), [React Flow components](docs/resources.md#sysml-react-flow-components) | Retain geometry or implement diagram layouts; cross-tool interchange remains unverified |
+
+An image export, model conversion, or tool-specific layout extension does not by itself establish portable editable diagrams.
+
+## Analyze models
+
+| Category | Resources | Use |
+| --- | --- | --- |
+| Calculations and behavior execution | [OpenSysML](docs/resources.md#opensysml) | Evaluate values and execute supported actions and states |
+| Expressions and constraint solving | [SysML Toolkit](docs/resources.md#sysml-toolkit), [SysMD](docs/resources.md#sysmd-notebook) | Evaluate expressions, units and supported constraint fragments |
+| Queries and model exploration | [API Cookbook](docs/resources.md#sysml-v2-api-cookbook), [Python API client](docs/resources.md#openmbee-python-api-client) | Traverse decomposition and query model repositories |
+| Diagrams and visualization | [Java pilot](docs/resources.md#sysml-v2-java-pilot), [SysML Toolkit](docs/resources.md#sysml-toolkit), [Eclipse SysON](docs/resources.md#eclipse-syson), [VS Code extension](docs/resources.md#sysml-v2-vs-code-extension) | Inspect models through visual views |
+| Dependencies and structural metrics | [Windseeker](docs/resources.md#windseeker), [SysML v2 LSP](docs/resources.md#sysml-v2-language-server) | Order package dependencies or inspect model complexity; general impact analysis is not established |
+| Traceability and requirements | [SYSMOD](docs/resources.md#sysmod-library), [Apollo 11](docs/resources.md#airbus-apollo-11-reference-model), [StrictDoc](docs/resources.md#strictdoc), [Eclipse Lyo](docs/resources.md#eclipse-lyo) | Model relationships or build requirements/lifecycle integrations; adjacent tools need connectors |
+| CAD and simulation integration | [Onshape geometry connector](docs/resources.md#sysml-v2-geometry-and-onshape-connector), [FMPy](docs/resources.md#fmpy) | Exchange assembly structure or run FMUs; FMPy is a generic simulation component |
+| Reporting and documents | [OpenSysML](docs/resources.md#opensysml), [Windseeker](docs/resources.md#windseeker), [SysMD](docs/resources.md#sysmd-notebook), [Cameo MDK/DocGen](docs/resources.md#openmbee-cameo-mdk-and-docgen) | Produce model-derived documents and notebooks; Cameo MDK is a legacy MBSE reference |
+
+Use the resource notes to distinguish native model processing from examples and generic integration components.
+
+## Validate models
+
+| Category | Resources | Use |
+| --- | --- | --- |
+| Syntax and semantic checks | [SysML Toolkit](docs/resources.md#sysml-toolkit), [OpenSysML](docs/resources.md#opensysml), [Java pilot](docs/resources.md#sysml-v2-java-pilot) | Investigate language diagnostics and supported checks |
+| Project rules and linting | [SysML Toolkit](docs/resources.md#sysml-toolkit), [sysml-style](docs/resources.md#sysml-style) | Apply modeling policies; sysml-style's license remains unverified |
+| Engineering patterns and constraints | [Refinery validator](docs/resources.md#refinery-sysml-v2-validator), [SysMD](docs/resources.md#sysmd-notebook), [SysML Toolkit](docs/resources.md#sysml-toolkit) | Check selected patterns and supported constraints; preserve undecided outcomes |
+| Automated execution and CI hooks | [Windseeker](docs/resources.md#windseeker), [sysml-style](docs/resources.md#sysml-style), [service contract suite](docs/resources.md#opensysml-service-contract-suite) | Use failure exit codes and machine-readable test results in workflows |
+| Implementation tests and evidence | [OpenMBEE testing ledger](docs/resources.md#openmbee-sysml-v2-testing-ledger), [service contract suite](docs/resources.md#opensysml-service-contract-suite), [GfSE models](docs/resources.md#gfse-sysml-v2-model-collection) | Retain scoped observations, regression results and model inputs |
+
+Requirement verification depends on the selected engine, model, rules and evidence. A regression suite or fixture collection is not automatically an independent conformance suite.
+
+Keep three kinds of validation distinct:
+
+- **Language correctness:** syntax, reference resolution, typing, and other language rules.
+- **Engineering checks:** project rules, budgets, requirements, and analysis assumptions.
+- **Implementation conformance:** whether a tool satisfies a particular standard obligation under a documented test scope.
+
+A model passing a tool's checks does not establish engineering approval or complete tool conformance. An undecided result is not a pass.
+
+## Supporting infrastructure
+
+| Category | Resources | Use |
+| --- | --- | --- |
+| Engines, SDKs, and bindings | [OpenSysML](docs/resources.md#opensysml), [SysML Toolkit](docs/resources.md#sysml-toolkit), [Java pilot](docs/resources.md#sysml-v2-java-pilot), [SysML2.NET](docs/resources.md#sysml2net) | Integrate model processing into applications |
+| Model repositories and API services | [Flexo MMS SysML v2](docs/resources.md#flexo-mms-sysml-v2-microservice), [API Services pilot](docs/resources.md#sysml-v2-api-services-pilot) | Access persisted models through REST/HTTP |
+| Clients and lifecycle integrations | [Python API client](docs/resources.md#openmbee-python-api-client), [API Cookbook](docs/resources.md#sysml-v2-api-cookbook), [Eclipse Lyo](docs/resources.md#eclipse-lyo) | Build repository and lifecycle integrations |
+| Package indexes | [Sysand](docs/resources.md#sysand) | Publish and resolve model packages |
+| Collaboration and revision workflows | [API Cookbook](docs/resources.md#sysml-v2-api-cookbook), [OpenMBEE web modeler](docs/resources.md#openmbee-web-modeler), [Eclipse SysON](docs/resources.md#eclipse-syson) | Explore branches/commits and shared model interfaces; assess concurrency separately |
+| Change review and diff/merge contracts | [Systems Modeling API](https://www.omg.org/spec/SystemsModelingAPI/1.0/), [LSP preview modes](docs/resources.md#sysml-v2-language-server) | Study version/change services and visual comparison; general semantic merge remains unverified |
+| Deployment and development environments | [SysON Podman recipe](docs/resources.md#syson-podman-compose-recipe), [API Services pilot](docs/resources.md#sysml-v2-api-services-pilot), [OpenMBEE web modeler](docs/resources.md#openmbee-web-modeler) | Set up isolated model environments |
+| Evidence and provenance | [OpenMBEE testing ledger](docs/resources.md#openmbee-sysml-v2-testing-ledger), [service contract suite](docs/resources.md#opensysml-service-contract-suite) | Preserve version-bound observations and report artifacts |
+
+See [coverage and open questions](docs/coverage.md) for limits of this collection, particularly semantic merge and diagram interoperability.
+
+## Standards and reference material
+
+- [OMG SysML 2.0](https://www.omg.org/spec/SysML/2.0/): language and v1-to-v2 transformation specifications and normative artifacts.
+- [OMG KerML 1.0](https://www.omg.org/spec/KerML/1.0/): the language foundation and interchange artifacts.
+- [OMG Systems Modeling API and Services 1.0](https://www.omg.org/spec/SystemsModelingAPI/1.0/): model service contracts and machine-readable artifacts.
+- [Official libraries and examples](docs/resources.md#official-libraries-and-examples): release-specific models and learning material.
+
+Related discovery indexes:
+
+- [mycr0ft/awesome-sysml](https://github.com/mycr0ft/awesome-sysml)
+- [jgsystemsconsulting/awesome-sysml-v2](https://github.com/jgsystemsconsulting/awesome-sysml-v2)
+- [daltskin/SysML-v2-Resources](https://github.com/daltskin/SysML-v2-Resources)
+- [jgsystemsconsulting/awesome-mbse](https://github.com/jgsystemsconsulting/awesome-mbse)
+- [INCOSE SysML v2 learning resources](https://github.com/INCOSE/sysml-v2-wiki/blob/main/docs/learning-resources.md)
+
+## Maintain this catalog
+
+The README is the browsing index; [resource notes](docs/resources.md) hold canonical entry details. Use the [entry template](docs/resource-template.md) and [contribution guide](CONTRIBUTING.md) when adding or updating a resource.
+
+No installation or build is required: read and edit Markdown. Updates are manual; no recurring job or website is configured. Repository publication, catalog licensing, and a named maintenance owner remain to be settled. Linked resources retain their upstream licenses.
