@@ -22,7 +22,7 @@ Collection reviewed on 2026-10-11. The task-based README maps the agreed build, 
 
 - **Direct SysML resources:** implementations, editors, libraries, model collections and SysML API clients.
 - **Adjacent integration components:** FMPy, StrictDoc and Eclipse Lyo are useful for simulation, requirements and lifecycle integrations. Their inclusion does not imply a ready-made native SysML v2 connector.
-- **Legacy MBSE resources:** Cameo MDK/DocGen illustrates model-based documentation and repository integration; native v2 support was not established.
+- **Legacy MBSE resources:** View Editor and Cameo MDK/DocGen illustrate model-based documentation and repository integration; native v2 support was not established. View Editor backend compatibility with Flexo also remains unverified.
 - **Project-specific tests/extensions:** OpenSysML's service suite and layout metadata have defined local contracts. Neither is an OMG certification or an adopted diagram-interchange standard.
 
 ## Further collection and review

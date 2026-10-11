@@ -17,7 +17,7 @@
 
 Find tools and utilities for **building, analyzing, and validating models** with SysML v2 and related MBSE workflows. Open-source tooling is the initial focus; commercial and mixed-license resources may be included with clear access terms.
 
-**33 resource records** &nbsp; · &nbsp; **Primary documentation reviewed: 11 October 2026**
+**36 resource records** &nbsp; · &nbsp; **Primary documentation reviewed: 11 October 2026**
 
 ## Browse by task
 
@@ -67,7 +67,7 @@ An image export, model conversion, or tool-specific layout extension does not by
 | Dependencies and structural metrics | [SysML v2 LSP](docs/resources.md#sysml-v2-language-server) | Inspect model complexity; general impact analysis is not established |
 | Traceability and requirements | [SYSMOD](docs/resources.md#sysmod-library), [StrictDoc](docs/resources.md#strictdoc), [Eclipse Lyo](docs/resources.md#eclipse-lyo) | Model relationships or build requirements/lifecycle integrations; adjacent tools need connectors |
 | CAD and simulation integration | [FMPy](docs/resources.md#fmpy) | Run FMUs; FMPy is a generic simulation component |
-| Reporting and documents | [OpenSysML](docs/resources.md#opensysml), [SysMD](docs/resources.md#sysmd-notebook) | Produce model-derived documents and notebooks |
+| Reporting and documents | [View Editor (legacy MBSE)](docs/resources.md#openmbee-view-editor), [OpenSysML](docs/resources.md#opensysml), [SysMD](docs/resources.md#sysmd-notebook) | Produce model-derived documents and notebooks |
 
 Use the resource notes to distinguish native model processing from examples and generic integration components.
 
@@ -96,13 +96,16 @@ A model passing a tool's checks does not establish engineering approval or compl
 | Category | Resources | Use |
 | --- | --- | --- |
 | Engines, SDKs, and bindings | [OpenSysML](docs/resources.md#opensysml), [SysML Toolkit](docs/resources.md#sysml-toolkit), [Java pilot](docs/resources.md#sysml-v2-java-pilot), [SysML2.NET](docs/resources.md#sysml2net) | Integrate model processing into applications |
-| Model repositories and API services | [Flexo MMS SysML v2](docs/resources.md#flexo-mms-sysml-v2-microservice), [API Services pilot](docs/resources.md#sysml-v2-api-services-pilot) | Access persisted models through REST/HTTP |
+| Model repositories and API services | [Flexo MMS Layer 1](docs/resources.md#flexo-mms-layer-1), [Flexo MMS SysML v2](docs/resources.md#flexo-mms-sysml-v2-microservice), [API Services pilot](docs/resources.md#sysml-v2-api-services-pilot) | Access persisted models through REST/HTTP |
+| Stakeholder portals | [View Editor (legacy MBSE)](docs/resources.md#openmbee-view-editor), [OpenMBEE web modeler](docs/resources.md#openmbee-web-modeler) | Browse model-derived documents or interact with models; check backend compatibility |
 | Clients and lifecycle integrations | [Python API client](docs/resources.md#openmbee-python-api-client), [Eclipse Lyo](docs/resources.md#eclipse-lyo) | Build repository and lifecycle integrations |
 | Package indexes | [Sysand](docs/resources.md#sysand) | Publish and resolve model packages |
-| Collaboration and revision workflows | [OpenMBEE web modeler](docs/resources.md#openmbee-web-modeler), [Eclipse SysON](docs/resources.md#eclipse-syson) | Explore branches/commits and shared model interfaces; assess concurrency separately |
+| Collaboration and revision workflows | [Flexo MMS Layer 1](docs/resources.md#flexo-mms-layer-1), [OpenMBEE web modeler](docs/resources.md#openmbee-web-modeler), [Eclipse SysON](docs/resources.md#eclipse-syson) | Explore branches/commits and shared model interfaces; assess concurrency separately |
 | Change review and diff/merge contracts | [Systems Modeling API](https://www.omg.org/spec/SystemsModelingAPI/1.0/), [LSP preview modes](docs/resources.md#sysml-v2-language-server) | Study version/change services and visual comparison; general semantic merge remains unverified |
-| Deployment and development environments | [API Services pilot](docs/resources.md#sysml-v2-api-services-pilot), [OpenMBEE web modeler](docs/resources.md#openmbee-web-modeler) | Set up isolated model environments |
+| Deployment and development environments | [Flexo MMS deployment](docs/resources.md#flexo-mms-deployment), [API Services pilot](docs/resources.md#sysml-v2-api-services-pilot), [OpenMBEE web modeler](docs/resources.md#openmbee-web-modeler) | Set up isolated model environments |
 | Evidence and provenance | [OpenMBEE testing ledger](docs/resources.md#openmbee-sysml-v2-testing-ledger), [service contract suite](docs/resources.md#opensysml-service-contract-suite) | Preserve version-bound observations and report artifacts |
+
+Flexo Layer 1 provides RDF repository services; its SysML v2 adapter provides the modeling API, and the deployment repository supplies setup examples. View Editor belongs to the legacy Execubots ecosystem; direct Flexo or native SysML v2 compatibility remains unverified.
 
 See [coverage and open questions](docs/coverage.md) for limits of this collection, particularly semantic merge and diagram interoperability.
 

@@ -92,6 +92,40 @@ Entries distinguish tools, libraries, example models, deployment recipes, and te
 - **Limits:** API access and persistence do not establish language validation, simulation support, or engineering correctness. Test endpoint coverage against the selected deployment.
 - **Source:** [Repository and setup instructions](https://github.com/Open-MBEE/flexo-mms-sysmlv2).
 
+## Flexo MMS Layer 1
+
+- **Purpose:** Graph-native repository service for version-controlled CRUD operations on RDF models, underlying the Flexo SysML v2 adapter.
+- **Tasks/categories:** Analyze, supporting infrastructure; repositories, model queries, revision management.
+- **Interfaces:** HTTP service and OpenAPI artifacts; quadstore backend with RDF/SPARQL interfaces.
+- **License:** Apache-2.0; backend and complementary services have separate terms.
+- **Specification target:** RDF model management, not a SysML language engine. Systems Modeling API access is provided by the separate SysML v2 adapter.
+- **Getting started:** Follow the deployment guide, configure a quadstore, and initialize deployment-specific cluster data.
+- **Limits:** Repository versioning does not establish semantic merge or model validation. The README describes development setup; Flexo's RDF architecture is not a drop-in replacement for Exec MMS's JSON architecture.
+- **Sources:** [Repository and license](https://github.com/Open-MBEE/flexo-mms-layer1-service), [architecture overview](https://github.com/Open-MBEE), [deployment guide](https://flexo-mms-deployment-guide.readthedocs.io/en/latest/).
+
+## Flexo MMS deployment
+
+- **Purpose:** Deployment examples and configuration documentation for the Flexo MMS service stack.
+- **Tasks/categories:** Supporting infrastructure; deployment, local environments, service integration.
+- **Interfaces:** Docker Compose examples, Kubernetes manifests, and documentation for quadstore, authentication and storage configuration.
+- **License:** Apache-2.0 for the repository; deployed images and services retain their own terms.
+- **Specification target:** Flexo infrastructure; SysML/API compatibility depends on the selected service artifacts.
+- **Getting started:** Select an upstream deployment example and follow its initialization and service configuration instructions.
+- **Limits:** Example manifests do not establish production readiness or compatibility across arbitrary service versions. Pin artifacts and assess upgrades, access controls and recovery for the intended environment. No deployment was performed for this catalog.
+- **Sources:** [Repository and license](https://github.com/Open-MBEE/flexo-mms-deployment), [deployment documentation](https://flexo-mms-deployment-guide.readthedocs.io/en/latest/).
+
+## OpenMBEE View Editor
+
+- **Purpose:** Web portal for viewing and modifying model-derived documents and values held in MMS, including cross-references between documents.
+- **Tasks/categories:** Analyze, supporting infrastructure; stakeholder portals, documents, collaboration.
+- **Interfaces:** Browser application, configurable MMS endpoint, static web or Docker deployment.
+- **License:** Apache-2.0 for `exec-ve`; backend, integrations and optional publishing dependencies have separate terms.
+- **Host/service requirements:** Requires a compatible MMS backend. The documented browser workflow does not require opening MagicDraw; authoring integrations can have separate product requirements.
+- **Specification target:** Execubots/legacy MBSE ecosystem; native SysML v2 and direct Flexo Layer 1 compatibility were not established.
+- **Getting started:** Use the repository's build/configuration instructions and user guide with a compatible backend.
+- **Limits:** Distinguish this portal from the SysML v2 web modeler. Existing MMS endpoint configuration does not establish interoperability with the newer Flexo stack.
+- **Sources:** [Canonical repository and license](https://github.com/Open-MBEE/exec-ve), [user guide](https://docs.openmbee.org/projects/ve/en/latest/about.html), [architecture context](https://github.com/Open-MBEE).
+
 ## SysML v2 Language Server
 
 - **Purpose:** ANTLR4/TypeScript language server with navigation, diagnostics, structural complexity analysis, Mermaid previews, and an MCP interface.
