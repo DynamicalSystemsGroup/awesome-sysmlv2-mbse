@@ -8,6 +8,7 @@ Copy the section below into `resources.md`, replace placeholders, and remove gui
 - **Tasks/categories:** Build, analyze, validate, or supporting infrastructure; relevant categories.
 - **Interfaces:** CLI, SDK/languages, editor protocol, API, file formats, desktop/web interface.
 - **License/access:** SPDX identifier with a source link, or clearly stated commercial/mixed/unknown terms. Separate bundled libraries where needed.
+- **Host/service requirements:** Required proprietary host, account, subscription or API access, or none documented. Keep this separate from the resource's source license.
 - **Specification target:** Exact supported SysML/KerML/API version and its source, or not assessed.
 - **Getting started:** Link to upstream installation and a small useful workflow.
 - **Limits:** Supported subsets, known limitations, integration constraints, or not assessed.

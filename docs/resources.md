@@ -175,6 +175,7 @@ Entries distinguish tools, libraries, example models, deployment recipes, and te
 - **Tasks/categories:** Build, analyze; CAD connectors, assembly structure, geometry interchange.
 - **Interfaces:** Python `geometry_api`, `onshape_connector`, and transformation utilities.
 - **License:** Apache-2.0 for the repository; bundled helpers/dependencies need their own review.
+- **Host/service requirements:** Onshape connector operations require Onshape workspace access and API credentials; the generic geometry utilities are separate from that service dependency.
 - **Specification target:** SysML v2 domain integration; exact schema/library compatibility not assessed.
 - **Getting started:** Read the examples and connector configuration; test a small assembly before a larger workflow.
 - **Limits:** Assembly ownership and placement exchange does not imply complete CAD geometry or bidirectional semantic synchronization. Onshape operations require configured access.
@@ -318,6 +319,7 @@ Entries distinguish tools, libraries, example models, deployment recipes, and te
 - **Tasks/categories:** Analyze, supporting infrastructure; document generation, reporting, repository integration.
 - **Interfaces:** Cameo/No Magic plugin and DocGen workflow.
 - **License:** Apache-2.0 plugin; host-product access and dependency terms are separate.
+- **Host/service requirements:** Requires the proprietary Cameo/No Magic host; the plugin's open-source license does not cover host-product access.
 - **Specification target:** Legacy Cameo/SysML ecosystem; native SysML v2 support not established.
 - **Getting started:** Follow the MDK DocGen guide and sample models in a supported host version.
 - **Limits:** Useful as a related MBSE resource and workflow precedent; do not present it as a drop-in v2 reporting solution.
