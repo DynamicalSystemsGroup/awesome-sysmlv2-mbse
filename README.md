@@ -17,7 +17,7 @@
 
 Find tools and utilities for **building, analyzing, and validating models** with SysML v2 and related MBSE workflows. Open-source tooling is the initial focus; commercial and mixed-license resources may be included with clear access terms.
 
-**36 resource records** &nbsp; · &nbsp; **Primary documentation reviewed: 11 October 2026**
+**39 resource records** &nbsp; · &nbsp; **Primary documentation reviewed: 11 October 2026**
 
 ## Browse by task
 
@@ -26,6 +26,7 @@ Find tools and utilities for **building, analyzing, and validating models** with
 | [Build models](#build-models) | Editors, language servers, libraries, packages, migration and diagrams |
 | [Analyze models](#analyze-models) | Queries, calculations, constraints, traceability, simulation and reports |
 | [Validate models](#validate-models) | Language checks, engineering rules, automation and implementation tests |
+| [AI skills and agents](#ai-skills-and-agents) | Engineering workflow skills, agent integrations and MCP tools |
 | [Supporting infrastructure](#supporting-infrastructure) | Engines, SDKs, repositories, APIs, collaboration and deployment |
 
 [Open-source resources](#open-source-tools-and-resources) · [Proprietary tools and integrations](#proprietary-tools-and-host-dependent-integrations) · [License review](#resources-awaiting-license-review) · [Standards](#standards-and-reference-material) · [Coverage and open questions](docs/coverage.md) · [Maintain this catalog](#maintain-this-catalog)
@@ -90,6 +91,19 @@ Keep three kinds of validation distinct:
 - **Implementation conformance:** whether a tool satisfies a particular standard obligation under a documented test scope.
 
 A model passing a tool's checks does not establish engineering approval or complete tool conformance. An undecided result is not a pass.
+
+### AI skills and agents
+
+Resources for agent-assisted engineering, model authoring and tool access. These entries have documented open-source licensing; any agent platform, model provider or required backend has separate access terms.
+
+| Category | Resources | Use |
+| --- | --- | --- |
+| Engineering workflow skills | [DSG MBSE agent skills](docs/resources.md#dsg-mbse-agent-skills) | Discovery, requirements, architecture, verification, traceability, research and visualization, with optional OOSEM and SysML extensions |
+| Engine-specific skills | [OpenSysML agent skills](docs/resources.md#opensysml-agent-skills) | Guide an agent through model authoring and OpenSysML runtime/client workflows |
+| Repository tool access | [Flexo Layer 1 MCP server](docs/resources.md#flexo-mms-layer-1-mcp-server) | Expose RDF repository queries and permitted revision operations to MCP clients |
+| Language-tool integration | [SysML v2 LSP](docs/resources.md#sysml-v2-language-server) | Connect agents to documented language tooling through its MCP interface |
+
+**Skills** supply instructions and workflow references. **MCP servers** expose callable tools. **Agent applications** coordinate a model, tools and execution; no complete autonomous MBSE agent application has been reviewed here yet. Keep generated artifacts, engine observations and engineering review decisions distinct.
 
 ### Supporting infrastructure
 

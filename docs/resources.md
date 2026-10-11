@@ -402,3 +402,39 @@ Entries distinguish tools, libraries, example models, deployment recipes, and te
 - **Getting started:** Follow the suite README and run selected scenarios against a pinned service/client pair.
 - **Limits:** A passing service contract suite does not certify OMG language conformance or establish equivalence between independent engines.
 - **Source:** [OpenSysML conformance suite README](https://github.com/Open-MBEE/OpenSysML/blob/develop/conformance/README.md).
+
+## DSG MBSE agent skills
+
+- **Purpose:** Portable engineering workflow skills covering discovery, requirements, architecture, verification, traceability, research and visualization, with OOSEM and SysML v2/model-TDD extensions.
+- **Tasks/categories:** Build, analyze, validate; AI skills, project setup, evidence workflows.
+- **Interfaces:** `SKILL.md` folders, references, Python helpers and skills-only plugin packaging for compatible coding agents.
+- **License:** Apache-2.0 for original material; third-party boundaries are documented in notices.
+- **Host/service requirements:** A compatible agent client; optional engine-backed workflows require separately selected engines and libraries.
+- **Specification target:** General MBSE practices with partial SysML v2/KerML coverage; not a language implementation.
+- **Getting started:** Read the distribution guide, select skills, and begin with `setup-mbse-skills` in an engineering project.
+- **Limits:** Early draft; client invocation and workflow coverage are bounded. No automatic router or MCP server is supplied. Affiliation: maintained by DSG, also maintaining this catalog; evaluated under the same evidence criteria.
+- **Sources:** [Repository](https://github.com/DynamicalSystemsGroup/mbse_skills), [distribution and compatibility](https://github.com/DynamicalSystemsGroup/mbse_skills/blob/main/docs/distribution.md), [license](https://github.com/DynamicalSystemsGroup/mbse_skills/blob/main/LICENSE).
+
+## OpenSysML agent skills
+
+- **Purpose:** Teach coding agents to author models and use OpenSysML runtime, checking, conversion, documents, migration and client libraries.
+- **Tasks/categories:** Build, analyze, validate; AI skills, engine-specific workflows.
+- **Interfaces:** Agent Skills-format directories for CLI, REPL, services, LSP, notebooks, WebAssembly and language clients.
+- **License:** Apache-2.0.
+- **Host/service requirements:** Compatible agent client and the OpenSysML artifacts required by the selected skill.
+- **Specification target:** OpenSysML-specific guidance; version-specific statements require checking against the selected release.
+- **Getting started:** Copy or otherwise expose the selected skill directories to the agent; follow their tool prerequisites.
+- **Limits:** Upstream verification claims are not reproduced here. Agent discovery and successful invocation need client-specific checks; instructions are not an independent validation engine.
+- **Source:** [Open-MBEE/OpenSysML-Skills and license](https://github.com/Open-MBEE/OpenSysML-Skills).
+
+## Flexo MMS Layer 1 MCP server
+
+- **Purpose:** Expose Flexo repository, branch, RDF query and revision operations to AI assistants and other MCP clients.
+- **Tasks/categories:** Analyze, supporting infrastructure; AI tool access, model repositories, automation.
+- **Interfaces:** Python/FastMCP, streamable HTTP, Turtle and SPARQL; read-only mode and authorization-header passthrough.
+- **License:** README declares Apache-2.0; distribution license-file verification remains open.
+- **Host/service requirements:** Compatible MCP client, reachable Layer 1 API and appropriate credentials.
+- **Specification target:** Flexo Layer 1 API; not the standardized SysML modeling API or language semantics.
+- **Getting started:** Follow the container/development instructions, configure the API URL, and inspect available tools in read-only mode first.
+- **Limits:** Write mode includes model and access-control mutations. Tool registration limits do not replace backend permissions. No native SysML validation or complete autonomous agent is established.
+- **Source:** [Repository and tool/configuration documentation](https://github.com/Open-MBEE/flexo-mms-layer1-mcp).

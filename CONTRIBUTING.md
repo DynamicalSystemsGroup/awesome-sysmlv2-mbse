@@ -8,6 +8,8 @@ Include a resource when it has a concrete SysML v2 or related MBSE workflow, a p
 
 Place documented open-source resources in the task tables. Place proprietary tools and open-source integrations requiring a proprietary host in the separate access section, recording code licenses and host/service terms independently. Put resources with unresolved license evidence in the license-review section; standards and multi-artifact reference collections belong in reference material with artifact-specific terms. Multiple open-source licenses do not make a project proprietary, and charging for support or hosting does not change its code license.
 
+For AI resources, distinguish instruction/skill collections, MCP tool servers and agent applications. Record required clients, engines and services separately; source openness does not establish open access to the agent platform. Describe evaluation evidence without treating generated models or upstream test claims as engineering approval.
+
 Do not rank by stars or repeat marketing claims as verified findings. Apply the same criteria to affiliated and external projects; disclose relevant affiliations when recommending or evaluating tools. Link to other curated lists for discovery, but check claims against primary sources.
 
 ## Add or update an entry

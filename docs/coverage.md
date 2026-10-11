@@ -16,6 +16,7 @@ Collection reviewed on 2026-10-11. The task-based README maps the agreed build, 
 | Reporting and portals | Model interfaces, notebooks and document-generation workflows | Revision-bound reports and stakeholder-specific needs |
 | Testing, CI and provenance | Ledgers, contract runners and CLI automation hooks | Independent conformance scope and complete model-change workflows |
 | Collaboration and diff/merge | Branch/commit recipes, web interfaces and API contracts | Conflict semantics and a general cross-engine semantic merge utility |
+| AI skills and agents | General MBSE skills, engine-specific skills and MCP tool interfaces | Client invocation, workflow effectiveness and complete agent applications |
 | Deployment | Development recipes and service setup documentation | Reviewed production operation and upgrade behavior |
 
 ## Important distinctions
