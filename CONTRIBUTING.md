@@ -2,6 +2,12 @@
 
 Help developers and systems engineers choose tools for building, analyzing, and validating models. Keep entries short, useful, and grounded in the project's own sources.
 
+## Suggest a resource or correction
+
+Use [the resource suggestion template](https://github.com/DynamicalSystemsGroup/awesome-sysmlv2-mbse/issues/new?template=suggest-resource.md) for a missing tool or [the correction template](https://github.com/DynamicalSystemsGroup/awesome-sysmlv2-mbse/issues/new?template=update-resource.md) for outdated information, broken links or missing details. You do not need to prepare a complete catalog record to open an issue; a project link and a concrete use case are enough to start.
+
+To contribute an edit, fork the repository, create a branch, follow the steps below and open a pull request against `main`. The PR template prompts for sources and relevant checks. Mention any relationship to a recommended project when relevant; affiliations do not prevent inclusion.
+
 ## Inclusion
 
 Include a resource when it has a concrete SysML v2 or related MBSE workflow, a public source or documentation link, and enough information to explain its purpose. Open-source tools are the initial focus. Clearly identify commercial, mixed-license, archived, experimental, and proposed resources. Include non-SysML tools only when their MBSE integration is explained.
