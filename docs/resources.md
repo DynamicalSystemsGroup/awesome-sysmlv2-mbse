@@ -1,6 +1,6 @@
 # Resource notes
 
-These records summarize upstream documentation reviewed on **2026-10-11**. Unless an entry states otherwise, that date is its last review, the evidence level is **documentation reviewed**, and maintenance activity and exact release compatibility are **not assessed**. No local execution was performed for this catalog. An accessible repository alone does not establish active maintenance. Sources point to moving upstream pages unless stated otherwise. Pin a release and exact sources before relying on compatibility or comparing implementations.
+These records summarize upstream documentation reviewed through **2026-10-13**. Unless an entry states otherwise, that date is its last review, the evidence level is **documentation reviewed**, and maintenance activity and exact release compatibility are **not assessed**. No local execution was performed for this catalog. An accessible repository alone does not establish active maintenance. Sources point to moving upstream pages unless stated otherwise. Pin a release and exact sources before relying on compatibility or comparing implementations.
 
 Entries distinguish tools, libraries, example models, deployment recipes, and technical reference material. A generic integration component is labeled explicitly rather than presented as a ready-made SysML v2 integration.
 
@@ -169,6 +169,19 @@ Entries distinguish tools, libraries, example models, deployment recipes, and te
 - **Getting started:** Follow upstream container and backend configuration instructions.
 - **Limits:** Repository-loaded models can fall back to generated SysML-like text. Commits replace the model rather than offering general conflict-aware merging; remote timeouts and Pilot JSON-loading limits are documented.
 - **Source:** [Open-MBEE/sysmlv2-web-modeler](https://github.com/Open-MBEE/sysmlv2-web-modeler).
+
+## Kotar
+
+- **Purpose:** Integrated browser-based engineering environment for authoring, visualizing, validating and analyzing SysML v2/KerML models, with workspace files, scripts, data tools and revision workflows.
+- **Tasks/categories:** Build, analyze, validate; textual and graphical editing, local workspace management, model repository workflows.
+- **Interfaces:** Browser application, local file-system access, in-browser terminal and REPL, optional Git and remote Flexo/SysML v2 connections.
+- **License:** Proprietary; Kotar is described by its publisher as free to use, not open source. The underlying OpenMBEE SysML v2 kernel has a separate Apache-2.0 license.
+- **Host/service requirements:** Browser; desktop/local distribution and hosted deployment options are documented. Enterprise collaboration and remote repository workflows may require configured external services.
+- **Specification target:** SysML v2 and KerML; exact supported specification/release compatibility not assessed.
+- **Getting started:** Open the application, create a workspace, and save or synchronize it explicitly. Browser-local workspace data may be lost when browser storage is cleared.
+- **Limits:** Publisher documentation says model processing and storage are local by default, with remote communication for explicitly configured services. This catalog has not independently assessed data flows, security, or model compatibility.
+- **Last reviewed:** 2026-10-13; publisher support manual, FAQ and deployment listing.
+- **Sources:** [Kotar overview and user manual](https://github.com/planetaryutilities/kotar-support/wiki/User-Manual), [FAQ and licensing](https://github.com/planetaryutilities/kotar-support/wiki/FAQ), [Docker Hub deployment](https://hub.docker.com/r/planetaryutilities/kotar), [OpenMBEE SysML v2 web modeler integration context](https://github.com/Open-MBEE/sysmlv2-web-modeler).
 
 ## OpenMBEE Python API client
 
@@ -417,15 +430,16 @@ Entries distinguish tools, libraries, example models, deployment recipes, and te
 
 ## OpenSysML agent skills
 
-- **Purpose:** Teach coding agents to author models and use OpenSysML runtime, checking, conversion, documents, migration and client libraries.
+- **Purpose:** Agent Skills-format instructions for using OpenSysML to author and check models, run the CLI/REPL and services, generate documents, convert or migrate models, and use its language clients.
 - **Tasks/categories:** Build, analyze, validate; AI skills, engine-specific workflows.
-- **Interfaces:** Agent Skills-format directories for CLI, REPL, services, LSP, notebooks, WebAssembly and language clients.
+- **Interfaces:** Skill directories with `SKILL.md` files; upstream lists compatibility with Claude Code, Codex, Cursor, OpenCode, Devin and other compatible agents.
 - **License:** Apache-2.0.
 - **Host/service requirements:** Compatible agent client and the OpenSysML artifacts required by the selected skill.
 - **Specification target:** OpenSysML-specific guidance; version-specific statements require checking against the selected release.
-- **Getting started:** Copy or otherwise expose the selected skill directories to the agent; follow their tool prerequisites.
+- **Getting started:** Clone the skills repository and point the agent at `skills/`, or copy the selected skill directories into the agent's skill location. Follow each skill's runtime and client prerequisites.
 - **Limits:** Upstream verification claims are not reproduced here. Agent discovery and successful invocation need client-specific checks; instructions are not an independent validation engine.
-- **Source:** [Open-MBEE/OpenSysML-Skills and license](https://github.com/Open-MBEE/OpenSysML-Skills).
+- **Last reviewed:** 2026-10-13; repository README, skill catalog, and license.
+- **Sources:** [Open-MBEE/OpenSysML-Skills](https://github.com/Open-MBEE/OpenSysML-Skills), [skill catalog and setup](https://github.com/Open-MBEE/OpenSysML-Skills#skill-catalog), [Apache-2.0 license](https://github.com/Open-MBEE/OpenSysML-Skills/blob/main/LICENSE), [OpenSysML](https://github.com/Open-MBEE/OpenSysML).
 
 ## Flexo MMS Layer 1 MCP server
 

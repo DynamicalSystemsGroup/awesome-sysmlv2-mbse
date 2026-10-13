@@ -11,13 +11,21 @@
   <a href="CONTRIBUTING.md"><img src="https://img.shields.io/badge/contributions-welcome-7c3aed?style=flat-square" alt="Contributions welcome"></a>
 </p>
 
-<p><a href="docs/resources.md">Resource notes</a> &middot; <a href="docs/coverage.md">Coverage &amp; open questions</a> &middot; <a href="CONTRIBUTING.md">Contribute</a></p>
+<p><a href="docs/resources.md">Resource notes</a> &middot; <a href="docs/coverage.md">Coverage &amp; open questions</a> &middot; <a href="CONTRIBUTING.md">Contribute</a> &middot; <a href="https://github.com/DynamicalSystemsGroup/awesome-sysmlv2-mbse/issues/new/choose">Suggest a tool or correction</a></p>
 
 </div>
 
 Find tools and utilities for **building, analyzing, and validating models** with SysML v2 and related MBSE workflows. Open-source tooling is the initial focus; commercial and mixed-license resources may be included with clear access terms.
 
-**39 resource records** &nbsp; · &nbsp; **Primary documentation reviewed: 11 October 2026**
+**40 resource records** &nbsp; · &nbsp; **Primary documentation reviewed: 13 October 2026**
+
+## About
+
+This catalog helps developers and systems engineers discover technical tooling for SysML v2 and model-based systems engineering (MBSE). It brings together language engines, editors, diagrams, model repositories, analysis and validation utilities, integrations, and AI skills and agents.
+
+Resources are organized by the work they support: **build, analyze and validate models**. Each entry includes source links, licensing and access requirements, interfaces, and known limitations. Open-source resources, proprietary host-dependent integrations and unresolved license terms are clearly separated.
+
+Hosted by [Dynamical Systems Group](https://github.com/DynamicalSystemsGroup), the catalog welcomes community additions and corrections. Affiliated projects follow the same inclusion and evidence criteria as other entries. See [how to contribute](CONTRIBUTING.md), [suggest a missing resource](https://github.com/DynamicalSystemsGroup/awesome-sysmlv2-mbse/issues/new?template=suggest-resource.md), or [report an update](https://github.com/DynamicalSystemsGroup/awesome-sysmlv2-mbse/issues/new?template=update-resource.md).
 
 ## Browse by task
 
@@ -137,9 +145,13 @@ See [coverage and open questions](docs/coverage.md) for limits of this collectio
 
 ## Proprietary tools and host-dependent integrations
 
-No standalone proprietary modeling products have been reviewed for this collection yet. Future entries will be listed here with their access terms and the same build/analyze/validate categories.
+Proprietary modeling products are listed here with their access terms and the same build/analyze/validate categories.
 
-These existing integrations have open-source code but require access to a proprietary product or service for the named workflow:
+| Resource | Workflow | Code license | Required host/access |
+| --- | --- | --- | --- |
+| [Kotar](docs/resources.md#kotar) | Browser-based SysML v2 authoring, visualization, analysis and workspace management | Proprietary; free to use according to publisher | Browser; optional remote repositories and enterprise services |
+
+These integrations have open-source code but require access to a proprietary product or service for the named workflow:
 
 | Resource | Workflow | Code license | Required host/access |
 | --- | --- | --- | --- |
@@ -178,6 +190,8 @@ Related discovery indexes:
 
 ## Maintain this catalog
 
+**Know a tool we missed, or spotted outdated information?** [Suggest a resource](https://github.com/DynamicalSystemsGroup/awesome-sysmlv2-mbse/issues/new?template=suggest-resource.md) or [report a correction](https://github.com/DynamicalSystemsGroup/awesome-sysmlv2-mbse/issues/new?template=update-resource.md). Both links open a template to help you describe the resource and cite its sources. You can also fork the repository and [open a pull request](https://github.com/DynamicalSystemsGroup/awesome-sysmlv2-mbse/compare); the PR template includes a short checklist.
+
 The README is the browsing index; [resource notes](docs/resources.md) hold canonical entry details. Use the [entry template](docs/resource-template.md) and [contribution guide](CONTRIBUTING.md) when adding or updating a resource.
 
-No installation or build is required: read and edit Markdown. Updates are manual; no recurring job or website is configured. Repository publication, catalog licensing, and a named maintenance owner remain to be settled. Linked resources retain their upstream licenses.
+No installation or build is required: read and edit Markdown. Updates are manual; no recurring job or website is configured. Catalog licensing and a named maintenance owner remain to be settled. Linked resources retain their upstream licenses.
